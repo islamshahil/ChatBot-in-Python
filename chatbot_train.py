@@ -2,13 +2,18 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 import os
+import logging 
+
+logger = logging.getLogger() 
+logger.setLevel(logging.CRITICAL)
 
 bot = ChatBot('Bot')
-bot.set_trainer(ListTrainer)
+trainer = ListTrainer(bot)
+#trainer = bot.set_trainer(ListTraner)
 
-for files in os.listdir('/Users/shahil/Documents/python/ChatBot/english/'):
-     data = open('/Users/shahil/Documents/python/ChatBot/english/' + files , 'r').readlines()
-     bot.train(data)
+for files in os.listdir('E:/ChatBot-in-Python-master/english/'):
+     data = open('E:/ChatBot-in-Python-master/english/' + files , 'r').readlines()
+     trainer.train(data)
 
 while True:
     message = input('You:')
