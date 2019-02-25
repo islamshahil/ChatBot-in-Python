@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ChatBot-in-Python-master", "ChatBot-in-Python-master.pyproj", "{B6A3063C-6F2B-4287-ACB2-BD2AEE174262}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6A3063C-6F2B-4287-ACB2-BD2AEE174262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A3063C-6F2B-4287-ACB2-BD2AEE174262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AFB0926-CE3D-440B-AEE5-B84C5B302D8E}
+	EndGlobalSection
+EndGlobal
