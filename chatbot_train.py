@@ -27,7 +27,8 @@ for files in os.listdir('E:/ChatBot-in-Python-master/english/'):
 
 while True:
     message = input('You : ')
-    
+    W_s=message.find('weather')
+    W_c=message.find('Weather')
         
     if message.strip() == 'Bye' or message.strip() == 'bye' :
         print('Bot : Bye')
@@ -36,7 +37,7 @@ while True:
         reply = bot.get_response(message)
         print('Bot : ',reply)
 
-    if message.strip() == 'weather' or message.strip() == 'Weather' or message.strip() == 'What is the Weather?' or message.strip() == 'Weather today' or message.strip() == "What's the Weather" :
+    if message.strip() == 'weather' or message.strip() == 'Weather' or W_s!=-1 or W_c!=-1 :
         city = input('City Name : ')
         api_address='http://api.openweathermap.org/data/2.5/weather?appid=0c42f7f6b53b244c78a418f4f181282a&q='
         url = api_address + city
