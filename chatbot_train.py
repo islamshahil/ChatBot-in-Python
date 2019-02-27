@@ -8,6 +8,8 @@ import requests
 logger = logging.getLogger() 
 logger.setLevel(logging.CRITICAL)
 
+print("Please be Gramatically correct in your conversation. U'll get prepared for your english exam :-)")
+
 bot = chatbot = ChatBot('Bot',
     logic_adapters=
     [
@@ -31,7 +33,7 @@ while True:
     W_c=message.find('Weather')
         
     if message.strip() == 'Bye' or message.strip() == 'bye' :
-        print('Bot : Bye')
+        print('Bot : Sayonara :-)')
         break
     if message.strip() != 'bye' or message.strip() != 'Bye'  :
         reply = bot.get_response(message)
